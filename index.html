@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub - Your Study Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-lg border-b-4 border-indigo-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-6">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-indigo-600 p-3 rounded-xl">
+                        <i class="fas fa-book-open text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-bold text-gray-900">StudyHub</h1>
+                        <p class="text-gray-600">Your Academic Success Partner</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <div class="flex items-center space-x-2 text-gray-600">
+                        <i class="fas fa-users"></i>
+                        <span class="font-medium">5 Members</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex space-x-8">
+                <a href="#home" class="flex items-center space-x-2 py-4 px-2 border-b-2 border-indigo-500 text-indigo-600 font-medium text-sm">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#resources" class="flex items-center space-x-2 py-4 px-2 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 font-medium text-sm">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Resources</span>
+                </a>
+                <a href="#schedule" class="flex items-center space-x-2 py-4 px-2 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 font-medium text-sm">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Schedule</span>
+                </a>
+                <a href="#members" class="flex items-center space-x-2 py-4 px-2 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 font-medium text-sm">
+                    <i class="fas fa-users"></i>
+                    <span>Members</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Hero Section -->
+        <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-8 text-white mb-8">
+            <div class="max-w-3xl">
+                <h2 class="text-4xl font-bold mb-4">Welcome to StudyHub</h2>
+                <p class="text-xl mb-6 opacity-90">
+                    Your collaborative space for academic success. Share resources, plan study sessions, and achieve your goals together.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4 backdrop-blur-sm">
+                        <div class="text-2xl font-bold">12</div>
+                        <div class="text-sm opacity-90">Resources Shared</div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4 backdrop-blur-sm">
+                        <div class="text-2xl font-bold">8</div>
+                        <div class="text-sm opacity-90">Upcoming Sessions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Sections -->
+        <div id="home" class="space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Today's Sessions</h3>
+                        <i class="fas fa-calendar-alt text-indigo-600"></i>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <div>
+                                <div class="font-medium text-gray-900">Mathematics</div>
+                                <div class="text-sm text-gray-600">2:00 PM - 4:00 PM</div>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">In-person</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Top Resources</h3>
+                        <i class="fas fa-file-alt text-indigo-600"></i>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <div class="flex-1">
+                                <div class="font-medium text-gray-900 text-sm">Calculus II Notes</div>
+                                <div class="text-xs text-gray-600">Alex Chen</div>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-sm font-medium text-gray-900">4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Active Members</h3>
+                        <i class="fas fa-users text-indigo-600"></i>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center text-green-800 font-medium text-sm">
+                                AC
+                            </div>
+                            <div class="flex-1">
+                                <div class="font-medium text-gray-900 text-sm">Alex Chen</div>
+                                <div class="text-xs text-gray-600">Mathematics</div>
+                            </div>
+                            <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <p class="text-center text-gray-600">
+                © 2024 StudyHub. Created with ❤️ for academic success.
+            </p>
+        </div>
+    </footer>
+</body>
+              </html>
